@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: arogya-ai-health-twin
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    startCommand: npm run start

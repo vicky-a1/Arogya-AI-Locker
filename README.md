@@ -1,73 +1,81 @@
-# Welcome to your VIKAS project
+# Arogya AI Health Twin
 
-## Project info
+A comprehensive health management application that creates a digital twin of your health profile, manages your health records, and provides personalized health insights.
 
-**URL**: https://vikas.dev/projects/10c178ab-32d0-48c6-831a-1ec4b78f1690
+## Features
 
-## How can I edit this code?
+- Digital Health Twin
+- Health ID Creation
+- Health Locker for storing medical records
+- Family Health Manager
+- Health Analytics
+- Wearable Health Data Integration
+- Doctor Dashboard
+- Patient Dashboard
+- Notification Center
+- Multi-language Support
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use VIKAS**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Shadcn UI Components
+- React Router
+- React Query
+- React Hook Form
+- Zod (for validation)
 
-Simply visit the [VIKAS Project](https://vikas.dev/projects/10c178ab-32d0-48c6-831a-1ec4b78f1690) and start prompting.
+## Getting Started
 
-Changes made via VIKAS will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in VIKAS.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone <repository-url>
+cd arogya-ai-health-twin
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at http://localhost:5173 (or another port if 5173 is in use).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This will create a `dist` directory with the built application.
 
-## What technologies are used for this project?
+## Deployment
 
-This project is built with:
+This application is configured for deployment on:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Vercel
+- Render
+- Netlify
 
-## How can I deploy this project?
+See the [Deployment Guide](./DEPLOYMENT.md) for detailed instructions.
 
-Simply open [VIKAS](https://vikas.dev/projects/10c178ab-32d0-48c6-831a-1ec4b78f1690) and click on Share -> Publish.
+## Environment Variables
 
-## Can I connect a custom domain to my VIKAS project?
+Copy the `.env.example` file to `.env` and update the values as needed.
 
-Yes, you can!
+```bash
+cp .env.example .env
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.vikas.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT
